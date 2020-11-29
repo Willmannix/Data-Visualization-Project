@@ -1,0 +1,32 @@
+
+
+{
+
+	"two_thousand_twelve": {
+		"dem_candidate": "Barack Obama", 
+		"rep_candidate": "Mitt Romney", 
+		"dem_electoral" : 332, 
+		"rep_electoral" : 206, 
+		"dem_media": "http://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Obama_portrait_crop.jpg/640px-Obama_portrait_crop.jpg", 
+		"rep_media" : "http://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Mitt_Romney_by_Gage_Skidmore_6_cropped.jpg/640px-Mitt_Romney_by_Gage_Skidmore_6_cropped.jpg"
+	}, 
+
+	"two_thousand_eight": {
+		"dem_candidate": "Barack Obama", 
+		"rep_candidate": "John McCain", 
+		"dem_electoral" : 365, 
+		"rep_electoral" : 173, 
+		"dem_media": "http://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Obama_portrait_crop.jpg/640px-Obama_portrait_crop.jpg", 
+		"rep_media" : "https://upload.wikimedia.org/wikipedia/commons/e/e1/John_McCain_official_portrait_2009.jpg"
+	}, 
+	"two_thousand_four": {
+		"dem_candidate": "John Kerry", 
+		"rep_candidate": "George W. Bush", 
+		"dem_electoral" : 251, 
+		"rep_electoral" : 286, 
+		"dem_media": "https://upload.wikimedia.org/wikipedia/commons/6/62/John_F._Kerry.jpg", 
+		"rep_media" : "https://upload.wikimedia.org/wikipedia/commons/d/d4/George-W-Bush.jpeg"
+	}
+
+
+}

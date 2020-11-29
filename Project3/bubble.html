@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="js/d3.min.js"></script>
+	
+	<style>
+	a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+	</style>
+</head>
+<body>
+<div class="container">
+
+
+<div class="topnav">
+  <a class="active" href="index.html">bubble</a>
+  <a href="map.html">map</a>
+</div>
+  
+
+	<div class="row">
+			<div class="col-lg-6 col-md-12"> 
+					<header>
+						<h1>Historical Presidential Election Data Visualization</h1>
+						<nav>
+							<ul>
+								<li class="two-thousand-four btn btn-primary">2004</li>
+								<li class="two-thousand-eight btn btn-primary">2008</li>
+								<li class="two-thousand-twelve btn btn-primary">2012</li>
+							</ul>
+
+						</nav>
+					</header>
+			</div>
+			
+			<div class="col-lg-6 col-md-12"> 
+				<div class="popular-vote panel panel-primary">
+					<div class="panel-heading">Popular and Electoral Vote<span class="total-year"><span></div>
+					
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-lg-12 col-md-12">
+								<div class="col-lg-5 col-md-5">
+								<span>Total: </span><span class="total-vote"></span><br>
+								<span>Democratic: </span><span class="total-dem-vote"></span><br>
+								<span>Republican: </span><span class="total-rep-vote"></span><br>
+								<span>Other: </span><span class="total-third-vote"></span><br>
+								</div>
+								<div class="col-lg-3 col-md-3">
+									<span class="rep-candidate"></span>
+									<span class="rep-picture"></span>
+								</div>
+								<div class="col-lg-1 col-md-1">Vs.</div>
+								<div class="col-lg-3 col-md-3">
+									<span class="dem-candidate"></span>
+									<span class="dem-picture"></span>
+								</div>
+							</div>
+						</div>
+						<div class="pie-chart">
+					</div>
+				</div>
+			</div>
+
+
+
+	</div>	
+	
+
+
+	<div class="row">
+		<div class="col-lg-8">
+			<div class="chart">
+			</div>
+		</div>
+		<div class="col-lg-1"></div>
+		<div class="col-lg-3">
+			<div class="state-display panel panel-primary">
+				<div class="panel-heading">State Information<span class="total-year"><span></div>
+				<div class="panel-body">	
+					<span>Name: </span><span class="state-name"></span><br>
+					<span>Electoral Votes: </span><span class="state-electoral"></span><br>
+					<span>Total: </span><span class="state-total-vote"></span><br>
+					<span>Democratic: </span><span class="state-dem-vote"></span><br>
+					<span>Republican: </span><span class="state-rep-vote"></span><br>
+					<span>Other: </span><span class="state-third-vote"></span><br>
+					
+					<div class="state-pie-chart">
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div id="tooltip" class="hidden">
+		        <p><strong><span id="value"></span></strong></p>
+		</div>
+
+	</div>
+
+
+
+	<div class="row">
+
+</div>
+
+
+
+
+<script type="text/javascript" src="custom.js"></script>
+
+</body>
+
+
+
+
+
+
+
+
+</html>

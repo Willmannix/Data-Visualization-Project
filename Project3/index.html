@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<title>US Electoral Map</title>
+		<link rel="stylesheet" href="style.css"/>
+		<script src="http://d3js.org/d3.v2.min.js?2.10.1"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<script src="slider.js"></script>
+		
+		<style>
+			a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+		</style>
+	</head>
+	<body>
+	
+<div class="topnav">
+  <a class="active" href="index.html">bubble</a>
+  <a href="map.html">map</a>
+</div>
+
+
+		<div id="body">
+			<div style="display: inline-block; width: 260px;">
+				<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+			    	<input type="radio" name="radio-mini" id="election-2008-radio" value="election2008"  />
+			    	<label for="election-2008-radio">2008 Results</label>
+			
+					<input type="radio" name="radio-mini" id="election-2012-radio" value="election2012" checked="checked" />
+			    	<label for="election-2012-radio">2012 Polls</label>
+				</fieldset>
+			</div>
+			<span id="date-slider-value-label" class="label">Polls on or before: </span><span id="date-slider-value"></span>
+			<div id="#date-slider-container" data-role="fieldcontain">
+				<span id="date-slider-min-label"></span>
+				<input type="range" name="date-slider" id="date-slider" value="25" min="0" max="100" style="display:none;"/>
+				<span id="date-slider-max-label"></span>
+			</div>
+			<div id="main-container">
+				<div id="cartogram"> </div>
+			</div>
+			<div id="side-container">
+				<div id="vote-chart"> </div>
+				<div id="state-details">
+					<h3>Click a state</h3>
+					<p><span class='label'># of votes: </span></p>
+					<p><span class='label'># of polls:  </span></p>
+					<p><span class='label'>Displaying poll:  </span></p>
+					<p><span class='label'>Date conducted:  </span></p>
+					<p><span class='label'>% Dem:  </span></p>
+					<p><span class='label'>% GOP:  </span></p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
